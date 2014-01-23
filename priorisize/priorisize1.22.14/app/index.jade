@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title Priorisize1.22.14
+    link(rel='stylesheet' href='/css/normalize.css')
+    link(rel='stylesheet' href='/css/style.css')
+    script(src='/js/vendor/jquery.js')
+    script(src='/js/source/main.js')
+  body
+    header
+      table
+        tr
+          th Name
+          th Days
+          th Priority
+          th Workload
+        tr
+          td
+            input#textName(type='text' placeholder='e.g. write paper, etc.' autofocus)
+          td
+            input#textDays(type='text' placeholder='14')
+          td
+            input#textPriority(type='text' placeholder='low, med, or low')
+          td
+            input#textWorkload(type='text' placeholder='low, med, or low')
+          td
+            input#add(type='button' value='Add Task')
+      #container
+      ul
